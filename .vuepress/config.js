@@ -27,8 +27,8 @@ module.exports = {
       { text: 'Resources', 
         icon: 'reco-message',
         items: [
-          { text: 'TextBook', link: '/docs/TextBook/' },
-          { text: 'Software', link: '/docx/Software/' }
+          { text: 'TextBook', link: '/resources/TextBook/' },
+          { text: 'Software', link: '/resources/Software/' }
         ]
       },
 
