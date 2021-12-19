@@ -5,7 +5,7 @@ tags:
  - STM32
  - HAL库
 categories:
- -  STM32笔记
+ - STM32笔记
 ---
 
 ## 1.VS Code
