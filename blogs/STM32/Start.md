@@ -57,3 +57,41 @@ categories:
 8. 设置相关参数后即可烧录程序
 
    ![image-20211202214823086](https://s2.loli.net/2021/12/19/kfVAibhdtBnX3Zz.png)
+
+## 2.CLion
+
+1. 创建Cube工程
+
+   ![image-20211205002726645](https://s2.loli.net/2021/12/19/wgi37Thl9ez6DCj.png)
+
+   
+
+2. 选择`STM32CubeIDE`
+
+   ![image-20211205002801987](https://s2.loli.net/2021/12/19/OD1Ut6Nz9j4dp5L.png)
+
+   
+
+3. 代码生成设置如下
+
+   ![image-20211205002828606](https://s2.loli.net/2021/12/19/QuWBSVUaCey3kY7.png)
+
+   
+
+4. 编写代码
+
+   ![image-20211205002957005](https://s2.loli.net/2021/12/19/a2mTsrcS8354K9F.png)
+
+   
+
+5. 相应的`.cfg`文件在`D:\OpenOCD\share\openocd\scripts\board`
+
+   ![image-20211205003052938](https://s2.loli.net/2021/12/19/OuXKzeIkiGUVLg6.png)
+
+
+
+6. 可通过`Edit`编辑相关配置
+
+   ![image-20211205003145234](https://s2.loli.net/2021/12/19/IoKYnxv3Fs8TCJq.png)
+
+   ![image-20211205003159451](https://s2.loli.net/2021/12/19/Jz8Y5IcPbgDp9Qm.png)
