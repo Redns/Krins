@@ -1,5 +1,5 @@
 ---
-title: STM32开发环境搭建
+title: STM32入门笔记(一)：开发环境搭建
 date: 2021-12-19
 tags:
  - STM32
