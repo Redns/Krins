@@ -71,7 +71,7 @@ module.exports = {
         title: 'KangHua',
         desc: 'Student from UESTC.',
         avatar: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-        link: 'https://github.com/NewLearner4396/'
+        link: 'https://blogs-newlearner4396.vercel.app/'
       },
     ],
     logo: '/logo.png',
