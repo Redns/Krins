@@ -69,9 +69,9 @@ module.exports = {
     friendLink: [
       {
         title: 'KangHua',
-        desc: 'Student from UESTC.',
+        desc: 'A student from UESTC.',
         avatar: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-        link: 'https://blogs-newlearner4396.vercel.app/'
+        link: 'https://inviblog.vercel.app/'
       },
     ],
     logo: '/logo.png',
