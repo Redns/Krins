@@ -69,7 +69,7 @@ module.exports = {
     friendLink: [
       {
         title: 'KangHua',
-        desc: 'A simple and beautiful vuepress Blog & Doc theme.',
+        desc: 'Student from UESTC.',
         avatar: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
         link: 'https://github.com/NewLearner4396/'
       },
