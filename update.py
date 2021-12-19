@@ -1,7 +1,5 @@
 import os
 
-print("[Start]")
-
 os.system("git pull origin master")
 print("[1/3]sync done")
 

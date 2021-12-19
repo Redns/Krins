@@ -1,6 +1,6 @@
 module.exports = {
   title: "Krins",
-  description: 'A simple and beautiful vuepress blog theme .',
+  description: 'Welcome to my little world .',
   dest: 'public',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
