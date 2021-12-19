@@ -27,7 +27,8 @@ module.exports = {
       { text: 'Resources', 
         icon: 'reco-message',
         items: [
-          { text: 'vuepress-reco', link: '/docs/theme-reco/' }
+          { text: 'TextBook', link: '/docs/TextBook/' },
+          { text: 'Software', link: '/docx/Software/' }
         ]
       },
 
