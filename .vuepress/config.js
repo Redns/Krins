@@ -67,9 +67,9 @@ module.exports = {
     // 最后更新时间
     lastUpdated: 'Last Updated',
     // 作者
-    author: 'reco_luan',
+    author: 'Krins',
     // 作者头像
-    authorAvatar: '/avatar.png',
+    authorAvatar: '/jing.jpeg',
     // 备案号
     record: 'xxxx',
     // 项目开始时间
