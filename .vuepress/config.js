@@ -9,8 +9,32 @@ module.exports = {
   theme: 'reco',
   themeConfig: {
     nav: [
+      /**
+       * 点击返回首页
+       */
       { text: 'Home', link: '/', icon: 'reco-home' },
+
+
+      /**
+       * 时间线
+      */
       { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
+
+
+      /**
+       * 资源下载(电子书籍等)
+      */
+      { text: 'Resources', 
+        icon: 'reco-message',
+        items: [
+          { text: 'vuepress-reco', link: '/docs/theme-reco/' }
+        ]
+      },
+
+
+      /**
+       * 联系方式(Github首页)
+      */
       { text: 'Contact', 
         icon: 'reco-message',
         items: [
@@ -27,15 +51,18 @@ module.exports = {
       ]
     },  
     type: 'blog',
-    // 博客设置
+
+    /**
+     * 博客设置
+     */
     blogConfig: {
       category: {
-        location: 2, // 在导航栏菜单中所占的位置，默认2
-        text: 'Category' // 默认 “分类”
+        location: 2,      // 在导航栏菜单中所占的位置，默认2
+        text: 'Category'  // 默认 “分类”
       },
       tag: {
-        location: 3, // 在导航栏菜单中所占的位置，默认3
-        text: 'Tag' // 默认 “标签”
+        location: 3,      // 在导航栏菜单中所占的位置，默认3
+        text: 'Tag'       // 默认 “标签”
       }
     },
     friendLink: [
