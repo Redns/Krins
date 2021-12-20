@@ -2,7 +2,7 @@
 title: STM32入门笔记(二)：GPIO
 date: 2021-12-19
 tags:
- - STM32
+ - stm32
  - HAL库
 categories:
  - STM32笔记
