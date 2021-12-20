@@ -3,7 +3,7 @@ title: STM32入门笔记(一)：开发环境搭建
 date: 2021-12-19
 tags:
  - stm32
- - HAL库
+ - hal库
 categories:
  - STM32笔记
 ---

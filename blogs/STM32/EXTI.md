@@ -3,7 +3,7 @@ title: STM32入门笔记(三)：EXTI
 date: 2021-12-19
 tags:
  - stm32
- - HAL库
+ - hal库
 categories:
  -  STM32笔记
 ---
