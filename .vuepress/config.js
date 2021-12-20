@@ -85,7 +85,7 @@ module.exports = {
     // 作者
     author: 'Krins',
     // 作者头像
-    authorAvatar: '/jing.jpeg',
+    authorAvatar: '/jing.jpg',
     // 备案号
     record: 'xxxx',
     // 项目开始时间
