@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: Krins
-tagline: Welocome to my little world.
+tagline: 嵌入式 | FPGA | 应用开发
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
