@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: Krins
-tagline: 嵌入式 &emsp;|&emsp; FPGA &emsp;|&emsp; 应用开发 &emsp;|&emsp; AI &emsp;|&emsp; 信号处理
+tagline: 嵌入式 $~~~~$|$~~~~$ FPGA $~~~~$|$~~~~$ 应用开发 $~~~~$|$~~~~$ AI $~~~~$|$~~~~$ 信号处理
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
