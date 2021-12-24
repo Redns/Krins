@@ -34,18 +34,18 @@ categories:
 
 
 
-4. 点击工具 $$\rightarrow$$ 设置
+4. 点击工具 ——> 设置
 
 ![image-20211220181758795](https://s2.loli.net/2021/12/20/6Rsi3G5J49wpMNy.png)
 
 
 
-5. 点击解释器 $$\rightarrow$$ 选择解释器和ESP32对应的串口 $$\rightarrow$$ Install or update firmware
+5. 点击解释器 ——> 选择解释器和ESP32对应的串口 ——> Install or update firmware
 
 ![image-20211220181809465](https://s2.loli.net/2021/12/20/RwqUAr3tXWGfCom.png)
 
 
 
-6. 选择对应的端口和之前下载的Micropython固件，按如图所示配置 $$\rightarrow$$ 点击安装，等待安装完成即可
+6. 选择对应的端口和之前下载的Micropython固件，按如图所示配置 ——> 点击安装，等待安装完成即可
 
 ![image-20211220181820661](https://s2.loli.net/2021/12/20/L9ShPRaNWGc35v1.png)
