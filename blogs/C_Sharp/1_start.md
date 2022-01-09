@@ -2,8 +2,8 @@
 title: C#笔记(一)：程序结构
 date: 2022-01-03
 tags:
-- C-Sharp
-- dot net
+- cSharp
+- dotnet
 categories:
 - C#笔记
 ---
