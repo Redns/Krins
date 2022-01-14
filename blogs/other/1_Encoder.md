@@ -5,7 +5,7 @@ tags:
 - 编码器
 - stm32
 categories:
-- 硬件笔记
+- Hardware
 ---
 
 # 1 基本原理
