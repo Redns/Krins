@@ -1,11 +1,11 @@
 ﻿﻿---
-title: 增量编码器详解
+title: C#笔记()：
 date: 2022-01-14
 tags:
-- 编码器
-- stm32
+- cSharp
+- dotnet
 categories:
-- Hardware
+- C#笔记
 ---
 
 # 1 基本原理
