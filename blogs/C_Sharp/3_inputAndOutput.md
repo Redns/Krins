@@ -5,7 +5,7 @@ tags:
 - cSharp
 - dotnet
 categories:
-- C#笔记
+- cSharp笔记
 ---
 
 # 输入
