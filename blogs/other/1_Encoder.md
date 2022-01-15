@@ -1,6 +1,6 @@
 ﻿﻿---
 title: 增量式编码器详解
-date: 2022-01-14
+date: 2022-01-15
 tags:
 - 编码器
 - stm32
@@ -232,5 +232,3 @@ while (1)
 4. 实际效果
 
 ![image-20220114210332904](https://raw.githubusercontent.com/Redns/Notebook/master/Image/image-20220114210332904.png?token=AQOTG4EGKGRXHYD7KSBTIHLB4F2OU)
-
-> 读取相关值并通过OLED显示出来用函数发生器模拟两列方波，配置编码器时我采用T1 and T2模式，分频系数为3，所以1s内采集到的脉冲个数为( 50 * 4 ) / ( 3 + 1 ) = 50，延时时间为500ms，所以OLED显示的值为 50 / 2 * 2 = 50 。
