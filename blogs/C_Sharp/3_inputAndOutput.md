@@ -2,10 +2,10 @@
 title: C#笔记(三)：输入和输出
 date: 2022-01-14
 tags:
-- cSharp
-- dotnet
+- CSharp
+- .NET
 categories:
-- cSharp笔记
+- CSharp笔记
 ---
 
 # 输入

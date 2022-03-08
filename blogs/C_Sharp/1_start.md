@@ -2,10 +2,10 @@
 title: C#笔记(一)：程序结构
 date: 2022-01-03
 tags:
-- cSharp
-- dotnet
+- CSharp
+- .NET
 categories:
-- cSharp笔记
+- CSharp笔记
 ---
 
 # 程序结构

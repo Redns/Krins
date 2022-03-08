@@ -2,10 +2,10 @@
 title: C#笔记(二)：关键字与数据类型
 date: 2022-01-14
 tags:
-- cSharp
-- dotnet
+- CSharp
+- .NET
 categories:
-- cSharp笔记
+- CSharp笔记
 ---
 
 # 1 关键字

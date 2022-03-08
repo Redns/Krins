@@ -2,10 +2,10 @@
 title: C#笔记(四)：常量和数组
 date: 2022-01-14
 tags:
-- cSharp
-- dotnet
+- CSharp
+- .NET
 categories:
-- cSharp笔记
+- CSharp笔记
 ---
 
 # 1 常量
