@@ -1,6 +1,6 @@
 module.exports = {
   title: "Krins",
-  description: '欲买桂花同载酒，终不似，少年游',
+  description: 'I\'ll try anything once...',
   dest: 'public',
   head: [
     ['link', { rel: 'icon', href: '/head.ico' }],
