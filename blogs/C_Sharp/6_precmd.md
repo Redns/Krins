@@ -8,6 +8,4 @@ categories:
 - cSharp笔记
 ---
 
-## 预处理器指令
-
 ![image-20220114123508884](https://s2.loli.net/2022/01/14/5vxGzPpDq1TXS6w.png)

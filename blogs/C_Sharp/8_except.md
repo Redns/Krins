@@ -8,9 +8,7 @@ categories:
 - cSharp笔记
 ---
 
-## 异常处理
-
-### 1 异常类
+# 1 异常类
 
 `C#`中的异常类直接或间接派生于`System.Exception类`，包括常用的`System.ApplicationException`和`System.SystemException`。
 
@@ -20,7 +18,7 @@ categories:
 
 <br>
 
-### 2 异常处理框架
+# 2 异常处理框架
 
 `C#`的异常处理机制与`Java`一致，都以`try-catch-finally`为框架
 
