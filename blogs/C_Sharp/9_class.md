@@ -18,7 +18,7 @@ categories:
 
 类似于`C语言`中的指针，传递的参数不是实参的拷贝而是实参的引用，引用传递参数使用`ref`关键字定义
 
-```C#
+```Java
 // 定义
 public void swap(ref int x, ref int y){
     int temp = x;
@@ -37,7 +37,7 @@ swap(ref a, ref b);
 
 传递的参数不用于输入，而用于`输出`，使用`out`关键字定义
 
-```C#
+```Java
 // 定义
 public void getValue(out int x, out int y){
     x = 1;
@@ -55,7 +55,7 @@ getValue(out a, out b);
 
 在`Java`中获取实例的相关属性通常是使用`get()`和`set()`方法来实现，在保护属性不暴露的同时可以增加检查，非常方便。`C#`为我们提供了相应的语法糖支持，让我们可以更简单地实现这些功能
 
-```c#
+```Java
 public class Cloud{
     private string _name;
     public string name{
@@ -75,7 +75,7 @@ public class Cloud{
 
 通过上述操作，我们就能通过访问`Cloud`实例中的`name`来间接访问`_name`，相应的操作如下
 
-```c#
+```Java
 Cloud cloud = new Cloud();
 cloud.name = "jing";
 ```
@@ -84,7 +84,7 @@ cloud.name = "jing";
 
 注意！以下操作是错误的！当你试图给`name`赋值时，程序会陷入`set{}`的死循环！
 
-```c#
+```Java
 public class Cloud{
     public string name{
         get{
@@ -107,7 +107,7 @@ public class Cloud{
 
 `父类Cloud`
 
-```c#
+```Java
 public class Cloud {
         protected string name;
         protected string birth;
@@ -131,7 +131,7 @@ public class Cloud {
 
 `子类RealCloud`
 
-```c#
+```Java
 public class RealCloud : Cloud{
     private int weight;
     
@@ -156,7 +156,7 @@ public class RealCloud : Cloud{
 
 `父类Cloud`
 
-```c#
+```Java
 public class Cloud {
         protected string name;
         protected string birth;
@@ -173,7 +173,7 @@ public class Cloud {
 
 `子类RealCloud`
 
-```c#
+```Java
 public class RealCloud : Cloud{
     private int weight;
     
@@ -193,7 +193,7 @@ public class RealCloud : Cloud{
 
 泛型允许我们为多种类型的变量创建同样的代码，可为`类`、`方法`等使用泛型
 
-```c#
+```Java
 public class MyGenericArray<T> {
     private T[] array;
     public MyGenericArray(int size) {
@@ -244,7 +244,7 @@ for (int i = 0; i < 10; i++) {
 
 同一范围内对相同名称的函数有不同的定义
 
-```c#
+```Java
 class Test{
     public void print(int n){
         Console.WriteLine($"[Int]{n}");
@@ -262,7 +262,7 @@ class Test{
 
 `C#`允许用户自定义运算符，通过关键字`operator`后跟`运算符`来实现的。与其他函数一样，重载运算符有返回类型和参数列表。重定义类`Box`的`加法`方法如下
 
-```c#
+```Java
 class Box{
     public static Box operator+(Box box1, Box box2){
         Box box = new Box();
@@ -292,7 +292,7 @@ class Box{
 
 - 命名空间以关键字`namespace`开始，后跟命名空间的名称
 
-  ```c#
+  ```Java
   namespace Shape{
       
   }
@@ -302,7 +302,7 @@ class Box{
 
 - `命名空间`可包含多个类，不同的`命名空间`中的类可以重名
 
-  ```c#
+  ```Java
   namespace namespace_1{
       class Test{
           
@@ -320,7 +320,7 @@ class Box{
 
 - 调用命名空间中的`类`时，使用`using`关键字导入`命名空间`可简化程序设计
 
-  ```c#
+  ```Java
   // 1.不使用using关键字
   namespace_1.Test test = new namespace_1.Test();
   
@@ -333,7 +333,7 @@ class Box{
 
 - 命名空间与`文件`的名称不需要相同
 
-  ```c#
+  ```Java
   // A.cs
   namespace B{
       
@@ -346,7 +346,7 @@ class Box{
 
 `Interface`即接口，只声明函数而不能实现。`class`和`struct`能继承任意个`Interface`，继承的格式与继承`父类`一致，当继承多个`父类或接口`时，不同的`父类或接口`使用`逗号(,)`分割
 
-```c#
+```Java
 public interface Movement{
     void greet()
 }

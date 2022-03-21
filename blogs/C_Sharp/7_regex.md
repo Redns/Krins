@@ -42,7 +42,7 @@ categories:
 
 正则匹配使用了`Regex类`中的`IsMatch方法`
 
-```C#
+```Java
 // @不可缺少！且双引号内的字符仍然转义！
 Regex regex = new Regex(@"^what you want$");
 string str = "Hello World";

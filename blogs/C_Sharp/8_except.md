@@ -22,7 +22,7 @@ categories:
 
 `C#`的异常处理机制与`Java`一致，都以`try-catch-finally`为框架
 
-```c#
+```Java
 try{
     
 }

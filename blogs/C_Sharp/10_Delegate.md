@@ -12,7 +12,7 @@ categories:
 
 `委托`是一个类型，可以把`方法`赋值给该类型，从而通过该类型间接调用`方法`。`委托`的定义要包含`关键字delegate`、`返回值`、`类型名`和`参数列表`，格式如下
 
-```c#
+```Java
 delegate <return_Type> InvokerName(<params>);
 ```
 
@@ -26,7 +26,7 @@ delegate <return_Type> InvokerName(<params>);
 
 所有`委托`必须先定义，之后声明`委托变量`并赋给`委托变量`相应方法，最终才能通过`委托变量`间接调用方法。使用流程如下
 
-```c#
+```Java
 // Step1.定义委托类型
 delegate void IntMethodInvoker(int n);
 
@@ -45,7 +45,7 @@ invoker(100);
 
 结果
 
-```c#
+```Java
 Here is showValue, n is 100.
 ```
 
@@ -55,7 +55,7 @@ Here is showValue, n is 100.
 
 除了`静态方法`，`委托变量`还可以接受`实例方法`
 
-```c#
+```Java
 delegate void GetString();
 
 // 接收实例方法
@@ -69,7 +69,7 @@ getString();
 
 结果
 
-```c#
+```Java
 3.14
 ```
 
@@ -85,7 +85,7 @@ getString();
 
 `委托类型`可以定义数组，其中的每个元素都是`委托变量`，存储的都是`方法`。
 
-```c#
+```Java
 public class Math{
     public static double Square(double d){
         return d*d;
@@ -119,7 +119,7 @@ public static void Main(string[] args){
 
 `委托变量`可以作为函数的`参数`传递。
 
-```c#
+```Java
 public static void CalculateAndShowValue(MathOperation op, double value){
     Console.WriteLine(op(value));
 }
@@ -142,7 +142,7 @@ CalculateAndShowValue(Math.Square, 10);
 
 1. 无参数
 
-   ```c#
+   ```Java
    public static void ActionTest1() {
    
    }
@@ -155,7 +155,7 @@ CalculateAndShowValue(Math.Square, 10);
 
 2. 多个参数
 
-   ```c#
+   ```Java
    public static void ActionTest2(int n, double d){
        
    }
@@ -171,7 +171,7 @@ CalculateAndShowValue(Math.Square, 10);
 
 1. 无参数
 
-   ```c#
+   ```Java
    public static string FuncTest1(){
        
    }
@@ -185,7 +185,7 @@ CalculateAndShowValue(Math.Square, 10);
 
 2. 多个参数
 
-   ```c#
+   ```Java
    public static string FuncTest2(int n, double d){
        
    }
@@ -207,7 +207,7 @@ CalculateAndShowValue(Math.Square, 10);
 
 通过`+`、`-`可以`增加`、`减少`委托变量指代的方法。调用委托变量时，会依次调用`Delegate数组`里的方法，当其中任何一个方法抛出异常时，迭代过程停止
 
-```c#
+```Java
 Action action = CSharp.ActionTest1;
 action += CSharp.ActionTest1;
 action();
@@ -219,7 +219,7 @@ action();
 
 遍历`委托变量`指代的方法的过程如下
 
-```c#
+```Java
 // Step1.获取Delegate数组
 Delegate[] delegates = action.GetInvocationList();
 
@@ -236,7 +236,7 @@ foreach (Delegate d in delegates) {
 
 在函数体较小时，通过`定义函数-委托类型-调用委托变量`的过程显得较为繁琐，尤其是定义函数，可能会影响我们对整个主函数的把控。为此，`C#`允许我们定义匿名函数以简化操作，下面以`平方函数`为例展示匿名函数具体流程
 
-```c#
+```Java
 Func<double, double> Square = delegate(double d){
     return d*d;
 }
@@ -248,7 +248,7 @@ Square(10.0);
 
 我们还可以不定义`委托变量`，直接定义`函数`，这种写法就是`Lambda表达式`
 
-```c#
+```Java
 public static double Square(double d) => d*d;
 
 Square(10.0);
@@ -272,7 +272,7 @@ Square(10.0);
 
 **ToolMan.cs**
 
-```c#
+```Java
 // 任务清单
 public delegate void DownStairDelegate();
 
@@ -297,7 +297,7 @@ public class ToolMan {
 
 **LazyMan.cs**
 
-```c#
+```Java
 public class LazyMan {
     public string name { get; }
 
@@ -315,7 +315,7 @@ public class LazyMan {
 
 **Program.cs**
 
-```c#
+```Java
 class Program{
     public static void Main(string[] args){
         ToolMan toolMan = new ToolMan("Jing");
@@ -352,6 +352,6 @@ class Program{
   1. 只能使用`+=`和`-=`
   2. 只能在类内调用指代的方法
 
-  ```c#
+  ```Java
   public event DownStairDelegate? downStairDelegate;
   ```
