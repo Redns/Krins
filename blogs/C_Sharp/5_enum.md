@@ -10,7 +10,7 @@ categories:
 
 `C#`的枚举格式如下，和`Java`、`C`中一致
 
-```c#
+```Java
 enum <enumName>{
     // enumMembers
 }
