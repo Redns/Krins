@@ -10,8 +10,6 @@ categories:
 - WebApi开发
 ---
 
-# DbContext
-
 ## 简介
 
 [DbContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext?view=efcore-6.0) 可用于简化程序与数据库的交互，可通过`Nuget`搜索`[Microsoft.EntityFrameworkCore]`下载使用。`DbContext`相当于数据库实例，`DbSet`相当于数据库中的表。实际应用中，用户应继承`DbContext类`实现自己的子类，在子类中为每个数据实体添加`DbSet`属性。若这些属性的`Setter`权限为`public`，那么当`DbContext`实例被创建时，这些属性均会被初始化。
