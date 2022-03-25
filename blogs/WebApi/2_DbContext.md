@@ -12,13 +12,21 @@ categories:
 
 # DbContext
 
-## 1 简介
+## 简介
 
 [DbContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext?view=efcore-6.0) 可用于简化程序与数据库的交互，可通过`Nuget`搜索`[Microsoft.EntityFrameworkCore]`下载使用。`DbContext`相当于数据库实例，`DbSet`相当于数据库中的表。实际应用中，用户应继承`DbContext类`实现自己的子类，在子类中为每个数据实体添加`DbSet`属性。若这些属性的`Setter`权限为`public`，那么当`DbContext`实例被创建时，这些属性均会被初始化。
 
 
 
-## 2 创建数据库上下文
+## 环境搭建
+
+使用前需要使用 `Nuget` 安装如下包
+
+![image-20220325205205858](http://imagebed.krins.cloud/api/image/1648241526193.png)
+
+
+
+## 创建数据库上下文
 
 1. 在工程目录下创建`Model`文件夹，用于存放数据实体和数据库上下文
 
@@ -55,15 +63,14 @@ categories:
    /// <summary>
    /// 向容器中注入服务
    /// </summary>
-   builder.Services.AddControllers();
    builder.Services.AddDbContext<OurDbContext>();
    ```
-
    
 
 
 
-## 3 数据库操作
+
+## 操作数据库
 
 在上一步中我们知道了如何使用`DbContext`连接数据库，下面介绍如何对数据库中的表进行增、删、查、改操作。由于一个数据库中通常包含若干个表，每个表对应着一个数据实体，每个实体的操作往往是不同的。因此，我建议在`DbContext`子类的命名空间中，分别为每个实体创建类，以用于数据库操作。
 
@@ -99,7 +106,7 @@ namespace Model
 
 
 
-### 3.1 初始化
+### 初始化
 
 想要操作数据库中的表，需要分两步完成：
 
@@ -139,7 +146,7 @@ public class Test
 
 
 
-### 3.2 增删查改
+### 增删查改
 
 下面以`Users`表为例，演示如何执行增删查改操作
 
@@ -192,9 +199,9 @@ public class SQLUserData
 
 
 
-## 4 注意
+## 注意
 
-### 4.1 并行执行
+### 并行执行
 
 `Entity Framework Core `对于同一个`DbContext实例`不支持并行执行，例如
 
@@ -205,3 +212,22 @@ public class SQLUserData
 
 - 执行`async`调用时，立即使用`await`
 - 每次操作均使用不同的`DbContext实例`
+
+
+
+### 主键
+
+我们知道，数据库表对应着一个 `实体`，`EF框架` 要求实体必须设置 `主键`。默认情况下，`EF框架` 将实体中名为 `Id` 的变量作为主键，若实体中不包含名为 `Id` 的属性或想要设置其它属性为 `主键`，则需要使用特性 `Key` 指定。
+
+```Java
+using System.ComponentModel.DataAnnotations;
+
+private string _pwd;
+[Key]
+public string Pwd
+{
+    get { return _pwd; }
+    set { _pwd = value; }
+}
+```
+
