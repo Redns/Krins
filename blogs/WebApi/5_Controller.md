@@ -19,7 +19,23 @@ categories:
 
 实际上，现代前后端开发是上面两种方案的结合。我们通过如下例子说明
 
+```http
+# 后端提供的网址
+http://test.com
 
+# 处理登录相关操作
+# 包含登录、获取用户信息、……
+http://test.com/api/auth
+
+# 登录
+POST http://test.com/api/auth
+
+# 获取用户信息
+GET http://test.com/api/auth
+
+# 处理图片相关操作
+http://test.com/api/auth
+```
 
 
 
