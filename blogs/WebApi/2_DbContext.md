@@ -20,7 +20,7 @@ categories:
 
 使用前需要使用 `Nuget` 安装如下包
 
-![image-20220325205205858](https://img1.imgtp.com/2022/03/25/ApcwNfBW.jpeg)
+![image-20220325205205858](http://imagebed.krins.cloud/api/image/1648247213378.jpg)
 
 
 
